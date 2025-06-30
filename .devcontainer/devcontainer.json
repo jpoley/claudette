@@ -1,0 +1,17 @@
+{
+  "name": "Claude via Amazon Bedrock",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {},
+  "postCreateCommand": "pip install -r requirements.txt",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"]
+    }
+  },
+  "mounts": [
+    "source=${localEnv:HOME}/.aws,target=/root/.aws,type=bind"
+  ],
+  "remoteUser": "root"
+}
