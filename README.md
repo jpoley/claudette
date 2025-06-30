@@ -32,6 +32,6 @@ python invoke_claude.py
 1. Install Docker + VSCode + Remote Containers extension  
 2. Run:
    ```bash
-   git clone https://github.com/your-org/bedrock-claude-devcontainer.git
-   cd bedrock-claude-devcontainer
+   git clone https://github.com/jpoley/claudette.git
+   cd claudette
    code .
